@@ -1,0 +1,69 @@
+/* Estilos do título (h1) */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 20px;
+}
+
+/* Estilo do contêiner que alinha os itens */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Aumentado o espaço entre os itens */
+    height: 100vh;
+    position: relative; /* Necessário para garantir que o z-index funcione corretamente */
+}
+
+/* Estilo para os botões yes e no */
+.yes, .no {
+    font-size: 60px; /* Aumentando o tamanho das fontes */
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px 40px; /* Adicionando preenchimento para os botões */
+    border-radius: 10px; /* Tornando os botões com bordas arredondadas */
+    cursor: pointer; /* Adicionando um cursor de pointer para os botões */
+    transition: transform 0.2s ease-in-out; /* Animação suave ao passar o mouse */
+    position: relative; /* Para que o GIF possa ser posicionado sobre ele */
+}
+
+/* Estilo para o botão yes */
+.yes {
+    color: #ffffff;
+    background-color: #4CAF50; /* Cor verde de fundo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para o botão */
+}
+
+.yes:hover {
+    color: #ffffff;
+    background-color: #45a049; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom no botão */
+}
+
+/* Estilo para o botão no */
+.no {
+    color: #ffffff;
+    background-color: #f44336; /* Cor vermelha de fundo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para o botão */
+}
+
+.no:hover {
+    color: #ffffff;
+    background-color: #e53935; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom no botão */
+}
+
+/* Estilo do GIF sobre os botões */
+.backgroundgif {
+    position: absolute; /* Colocando o GIF sobre os botões */
+    top: 30%; /* Centralizando verticalmente */
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustando a posição para que o GIF fique exatamente no centro dos botões */
+    width: 300px; /* Definindo o tamanho do GIF */
+    height: auto; /* Ajustando automaticamente a altura */
+    z-index: 1; /* Colocando o GIF acima dos botões */
+    pointer-events: none; /* Fazendo com que o GIF não interfira na interação com os botões */
+}
+
+/* Adicionando uma borda ao redor do contêiner */
